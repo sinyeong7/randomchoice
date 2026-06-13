@@ -1,33 +1,61 @@
 .app-container {
-  max-width: 900px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 48px 24px;
   width: 100%;
 }
 
 .app-header {
   text-align: center;
-  margin-bottom: 2rem;
-  color: var(--text-dark);
+  margin-bottom: 48px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.header-icon {
+  font-size: 56px;
+  color: var(--md-sys-color-primary);
 }
 
 .app-header h1 {
-  font-size: 3.5rem;
-  margin: 0 0 0.5rem 0;
-  text-shadow: 2px 2px 0px white, 4px 4px 0px rgba(0,0,0,0.1);
-  letter-spacing: 2px;
-  color: #ff6b6b;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--md-sys-color-on-background);
 }
 
 .app-header p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
   margin: 0;
-  color: #2d3436;
-  font-weight: 600;
+  color: var(--md-sys-color-on-surface-variant);
 }
 
 .app-main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Material Design Elevated Card */
+.md-card {
+  background-color: var(--md-sys-color-surface);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: var(--md-elevation-1);
+  transition: box-shadow 0.3s ease;
+}
+
+.md-card:hover {
+  box-shadow: var(--md-elevation-2);
 }

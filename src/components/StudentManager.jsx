@@ -24,8 +24,8 @@ export default function StudentManager() {
   };
 
   return (
-    <div className="student-manager glass-panel">
-      <h2>🧑‍🎓 학생 명단 관리 ({students.length}명)</h2>
+    <div className="student-manager feature-card-container">
+      <h2 className="section-title">🧑‍🎓 학생 명단 관리 ({students.length}명)</h2>
       
       <div className="add-forms">
         <form onSubmit={handleAddSingle} className="add-single">
@@ -35,7 +35,7 @@ export default function StudentManager() {
             value={singleName}
             onChange={(e) => setSingleName(e.target.value)}
           />
-          <button type="submit" className="btn-add">추가</button>
+          <button type="submit" className="btn-secondary">추가</button>
         </form>
 
         <form onSubmit={handleBulkAdd} className="add-bulk">
@@ -45,7 +45,7 @@ export default function StudentManager() {
             onChange={(e) => setBulkNames(e.target.value)}
             rows="3"
           />
-          <button type="submit" className="btn-add-bulk">일괄 추가</button>
+          <button type="submit" className="btn-secondary">일괄 추가</button>
         </form>
       </div>
 
@@ -55,7 +55,7 @@ export default function StudentManager() {
         ) : (
           <div className="tags-container">
             {students.map((student, idx) => (
-              <span key={idx} className="student-tag">
+              <span key={idx} className="filter-chip">
                 {student}
                 <button type="button" onClick={() => removeStudent(student)} className="btn-remove">×</button>
               </span>

@@ -10,7 +10,10 @@ function App() {
     <StudentProvider>
       <div className="app-container">
         <header className="app-header">
-          <h1>✨ 두근두근 발표자 뽑기 ✨</h1>
+          <div className="title-wrapper">
+            <span className="material-symbols-outlined header-icon">volunteer_activism</span>
+            <h1>두근두근 발표자 뽑기</h1>
+          </div>
           <p>친구들과 함께하는 즐거운 수업 시간!</p>
         </header>
         

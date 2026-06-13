@@ -85,8 +85,11 @@ export default function SlotMachine() {
   };
 
   return (
-    <div className="slot-machine-container glass-panel">
-      <h2>🎰 랜덤 발표자 뽑기</h2>
+    <div className="slot-machine-container md-card">
+      <h2 className="section-title">
+        <span className="material-symbols-outlined title-icon">casino</span>
+        랜덤 발표자 뽑기
+      </h2>
       
       <div className="controls">
         <label>
@@ -101,10 +104,11 @@ export default function SlotMachine() {
           />
         </label>
         <button 
-          className="btn-start" 
+          className="btn-primary" 
           onClick={handleStart}
           disabled={isSpinning || students.length === 0}
         >
+          <span className="material-symbols-outlined">play_arrow</span>
           {isSpinning ? "추출 중..." : "추출 시작!"}
         </button>
       </div>

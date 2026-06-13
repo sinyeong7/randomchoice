@@ -1,124 +1,92 @@
 .student-manager {
-  margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-}
-
-.student-manager h2 {
-  margin: 0;
-  color: #2d3436;
-  font-size: 1.8rem;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  gap: 32px;
 }
 
 .add-forms {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.add-single {
+.add-single, .add-bulk {
   display: flex;
-  gap: 0.5rem;
+  gap: 12px;
+  align-items: stretch;
 }
 
 .add-single input {
   flex: 1;
-  padding: 0.8rem 1.2rem;
-  border: 2px solid rgba(255,255,255,0.8);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.6);
-  font-size: 1.1rem;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.add-single input:focus, .add-bulk textarea:focus {
-  background: rgba(255,255,255,0.9);
-  border-color: var(--secondary);
-  box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.3);
-}
-
-.btn-add {
-  background: var(--secondary);
-  color: white;
-  padding: 0 1.5rem;
-  font-size: 1.1rem;
 }
 
 .add-bulk {
-  display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .add-bulk textarea {
   width: 100%;
-  padding: 0.8rem 1.2rem;
-  border: 2px solid rgba(255,255,255,0.8);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.6);
-  font-size: 1rem;
-  outline: none;
   resize: vertical;
-  transition: all 0.3s ease;
 }
 
-.btn-add-bulk {
-  background: var(--primary);
-  color: white;
-  padding: 0.8rem;
-  font-size: 1.1rem;
+.btn-secondary {
+  background-color: var(--secondary-bg);
+  color: var(--on-secondary);
+  padding: 12px 24px;
+  border-radius: 16px;
   align-self: flex-end;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-pressed);
 }
 
 .tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 8px;
 }
 
-.student-tag {
-  background: white;
-  padding: 0.5rem 0.8rem 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-size: 1.1rem;
-  display: flex;
+.filter-chip {
+  background-color: var(--surface-card);
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  font-weight: 600;
-  color: #4a4a4a;
-  border: 1px solid rgba(0,0,0,0.05);
-  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s;
 }
 
-@keyframes popIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
+.filter-chip:hover {
+  background-color: var(--secondary-bg);
 }
 
 .btn-remove {
-  background: #ff7675;
-  color: white;
+  background: none;
+  border: none;
+  color: var(--ash);
+  padding: 0;
+  min-height: 0;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  padding: 0;
-  line-height: 1;
 }
 
 .btn-remove:hover {
-  background: #d63031;
+  background-color: var(--error-deep);
+  color: white;
 }
 
 .empty-msg {
-  color: #636e72;
-  font-style: italic;
+  color: var(--mute);
   text-align: center;
+  font-size: 14px;
 }
