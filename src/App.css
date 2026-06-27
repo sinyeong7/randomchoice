@@ -59,3 +59,57 @@
 .md-card:hover {
   box-shadow: var(--md-elevation-2);
 }
+
+/* Gateway Styles */
+.gateway-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: var(--md-sys-color-background);
+}
+
+.gateway-box {
+  text-align: center;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gateway-icon {
+  font-size: 64px;
+  color: var(--md-sys-color-primary);
+}
+
+.gateway-box h2 {
+  font-size: 32px;
+  margin: 0;
+  color: var(--md-sys-color-on-surface);
+}
+
+.gateway-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--md-sys-color-on-surface-variant);
+  margin: 0;
+  padding: 16px;
+  background-color: var(--md-sys-color-surface-variant);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.gateway-btn {
+  font-size: 18px;
+  padding: 16px 32px;
+  width: 100%;
+  margin-top: 8px;
+}
