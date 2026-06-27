@@ -12,8 +12,10 @@ function App() {
     return (
       <div className="gateway-container">
         <div className="md-card gateway-box">
-          <span className="material-symbols-outlined gateway-icon">gavel</span>
           <h2>윤리 핵심 가이드 서약</h2>
+          <div className="gateway-image-container">
+            <img src="/ethical_guide.png" alt="윤리 핵심 가이드" className="gateway-image" />
+          </div>
           <p className="gateway-text">
             이 사진에 있는 윤리 핵심가이드를 빠짐없이 읽고<br/>
             이를 지키겠습니다.
