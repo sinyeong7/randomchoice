@@ -3,6 +3,7 @@ import { StudentProvider } from './contexts/StudentContext';
 import StudentManager from './components/StudentManager';
 import SlotMachine from './components/SlotMachine';
 import SecretSettings from './components/SecretSettings';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         </main>
         
         <SecretSettings />
+        <Footer />
       </div>
     </StudentProvider>
   );
