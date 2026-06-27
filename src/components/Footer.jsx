@@ -28,7 +28,7 @@ function Footer() {
       </div>
       
       <div className="footer-info">
-        <p>정보관리책임자: 피카츄 부장 (pikachu@example.com)</p>
+        <p>개인정보책임자: 백인규 교사 (서울가동초등학교) | 문의: 02-448-5766</p>
         <p>Copyright &copy; 2026 두근두근 발표자 뽑기. All rights reserved.</p>
       </div>
 
